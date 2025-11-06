@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <title>Galeria Gabino - Promociones</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./img/logogabino.png">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html"><img src="./img/logogabino.jpg" alt="Logo Gabino"></a>
+      <h1>Gabino</h1>
+    </div>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="productos.html">Productos</a>
+      <a href="promociones.html">Promociones</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Promociones Especiales</h2>
+      <p>Elegí una promoción y descubrí cuánto podés ahorrar en tu compra</p>
+    </section>
+
+    <section class="promociones">
+      <div class="promo">
+        <h3>Llevá 2 productos y obtené 50% en el segundo</h3>
+        <p>Ideal para compartir o darte un gusto doble. Aplicable a todos los productos seleccionados.</p>
+        <form>
+          <label>Precio del producto: $</label>
+          <input type="number" min="0" placeholder="Ej: 12000"><br>
+          <label>Cantidad:</label>
+          <input type="number" min="1" value="2">
+          <button type="button">Calcular descuento</button>
+        </form>
+        <div class="resultado"></div>
+      </div>
+
+      <div class="promo">
+        <h3>3x2 en productos seleccionados</h3>
+        <p>Llevás 3 productos y solo pagás 2. La promoción se aplica automáticamente al menor valor.</p>
+        <form>
+          <label>Precio de un producto: $</label>
+          <input type="number" min="0" placeholder="Ej: 8000"><br>
+          <label>Cantidad:</label>
+          <input type="number" min="1" value="3">
+          <button type="button">Calcular descuento</button>
+        </form>
+        <div class="resultado"></div>
+      </div>
+
+      <div class="promo">
+        <h3> 10% de descuento por compras superiores a $30.000</h3>
+        <p>Tu compra tiene premio. Si el total supera los $30.000, obtenés un 10% de descuento.</p>
+        <form>
+          <label>Total de tu compra: $</label>
+          <input type="number" min="0" placeholder="Ej: 35000">
+          <button type="button">Calcular descuento</button>
+        </form>
+        <div class="resultado"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Gabino</p>
+  </footer>
+  <script src="promociones.js"></script>
+</body>
+</html>
