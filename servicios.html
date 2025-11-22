@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plaza Comercial | Servicios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <header class="header-principal flex-row-distribuida" role="banner">
+        <div class="logo-area flex-center-vertical">
+            <img src="images/logo_icon.png" alt="Icono de edificio de PaseoUADE"> 
+            <span class="nombre-marca">PaseoUADE</span>
+        </div>
+        <nav class="navegacion-principal flex-row-enlaces" aria-label="Navegación Principal del Sitio">
+            <a href="index.html" class="nav-link">Inicio</a>
+            <a href="servicios.html" class="nav-link" aria-current="page">Servicios</a>
+            <a href="entretenimiento.html" class="nav-link">Entretenimiento</a>
+            <a href="locales.html" class="nav-link">Locales</a>
+            <a href="ofertas.html" class="nav-link">Ofertas</a>
+            <a href="gastronomia.html" class="nav-link">Gastronomía</a>
+            <a href="contacto.html" class="nav-link">Contacto</a>
+            <button id="toggle-modo" class="btn-accesibilidad" aria-label="Cambiar modo de visualización">Modo Oscuro</button>
+        </nav>
+    </header>
+
+    <main class="main-content" id="main-content">
+        
+        <section class="seccion-pagina-secundaria" aria-labelledby="h1-servicios">
+            <h1 id="h1-servicios" class="titulo-pagina-secundaria">Servicios</h1>
+            <p class="subtitulo-pagina-secundaria">Pensamos en tu comodidad con servicios diseñados para mejorar tu experiencia.</p>
+            
+            <div class="servicios-wrap-container flex-wrap-tarjetas" role="region" aria-label="Lista de servicios disponibles en la plaza">
+                
+                <article class="tarjeta-servicio flex-item-tercio">
+                    <span class="icono-servicio-grande" aria-hidden="true">📶</span>
+                    <h2 class="servicio-titulo">WiFi Gratis</h2>
+                    <p>Conexión de alta velocidad en toda la plaza.</p>
+                </article>
+
+                <article class="tarjeta-servicio flex-item-tercio">
+                    <span class="icono-servicio-grande" aria-hidden="true">🅿️</span>
+                    <h2 class="servicio-titulo">Estacionamiento</h2>
+                    <p>Más de 800 espacios disponibles y cubiertos.</p>
+                </article>
+
+                <article class="tarjeta-servicio flex-item-tercio">
+                    <span class="icono-servicio-grande" aria-hidden="true">🛒</span>
+                    <h2 class="servicio-titulo">Carrito de compras</h2>
+                    <p>Disponibles en Información y en la entrada principal.</p>
+                </article>
+                
+                <article class="tarjeta-servicio flex-item-tercio">
+                    <span class="icono-servicio-grande" aria-hidden="true">🧸</span>
+                    <h2 class="servicio-titulo">Área infantil</h2>
+                    <p>Zona de juegos segura y vigilada para niños.</p>
+                </article>
+
+                <article class="tarjeta-servicio flex-item-tercio">
+                    <span class="icono-servicio-grande" aria-hidden="true">♿</span>
+                    <h2 class="servicio-titulo">Accesibilidad</h2>
+                    <p>Instalaciones adaptadas para todos los visitantes.</p>
+                </article>
+
+                <article class="tarjeta-servicio flex-item-tercio">
+                    <span class="icono-servicio-grande" aria-hidden="true">🏧</span>
+                    <h2 class="servicio-titulo">Cajeros Automáticos</h2>
+                    <p>Disponibles en varios puntos estratégicos.</p>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer-principal" role="contentinfo">
+        <p class="texto-copyright">&copy; 2025 PaseoUADE. Todos los derechos reservados.</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

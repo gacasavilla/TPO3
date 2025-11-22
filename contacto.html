@@ -1,49 +1,133 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Galeria Gabino - Contacto</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="./img/logogabino.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaseoUADE | Contacto</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <a href="index.html"><img src="./img/logogabino.jpg" alt="Logo Gabino"></a>
-      <h1>Gabino</h1>
-    </div>
-    <nav>
-      <a href="index.html">Inicio</a>
-      <a href="nosotros.html">Nosotros</a>
-      <a href="productos.html">Productos</a>
-      <a href="promociones.html">Promociones</a>
-      <a href="contacto.html">Contacto</a>
-    </nav>
-  </header>
+    
+    <header class="header-principal flex-row-distribuida" role="banner">
+        <div class="logo-area flex-center-vertical">
+            <img src="images/logo_icon.png" alt="Icono de edificio de PaseoUADE"> 
+            <span class="nombre-marca">PaseoUADE</span>
+        </div>
+        <nav class="navegacion-principal flex-row-enlaces" aria-label="Navegación Principal del Sitio">
+            <a href="index.html" class="nav-link">Inicio</a>
+            <a href="servicios.html" class="nav-link">Servicios</a>
+            <a href="entretenimiento.html" class="nav-link">Entretenimiento</a>
+            <a href="locales.html" class="nav-link">Locales</a>
+            <a href="ofertas.html" class="nav-link">Ofertas</a>
+            <a href="gastronomia.html" class="nav-link">Gastronomía</a>
+            <a href="contacto.html" class="nav-link" aria-current="page">Contacto</a>
+            <button id="toggle-modo" class="btn-accesibilidad" aria-label="Cambiar modo de visualización">Modo Oscuro</button>
+        </nav>
+    </header>
 
-  <main>
-    <section class="contactoysedes">
-      <h2>Contacto y nuestros locales</h2>
-      <h3>Nuestras sedes:</h3>
-      <p><strong> Sede principal Galeria Balvanera</strong></p>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.011300354512!2d-58.4135646235035!3d-34.60387575750777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca8c854bd13f%3A0xfc0cf5c054da4aa1!2sAbasto%20Shopping!5e0!3m2!1ses!2sar!4v1759711438964!5m2!1ses!2sar" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      <p><strong>Dirección:</strong> Galería Central, Local 12</p>
-      <p><strong>Sede Belgrano</strong></p>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26287.406828752824!2d-58.47138559772032!3d-34.555432675719835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5d28526611d%3A0xbcb585a9ddc70069!2sBelgrano%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1759711345750!5m2!1ses!2sar" width="600" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      <p><strong>Sede Caballito</strong></p>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13134.026070989174!2d-58.4550299281976!3d-34.61663815806249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3911f8ab2d%3A0x27b394c2f3d87d2d!2sCaballito%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1759711417407!5m2!1ses!2sar" width="600" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <main class="main-content" id="main-content">
+        
+        <section class="seccion-contacto" aria-labelledby="h1-contacto">
+            <h1 id="h1-contacto" class="titulo-pagina-secundaria">Contacto</h1>
+            <p class="subtitulo-pagina-secundaria">Estamos aquí para ayudarte. Contáctanos para cualquier consulta o información.</p>
+            
+            <div class="contacto-flex-container flex-columna-responsive">
 
-      <div>
-        <p><strong>Teléfono:</strong> (011) 4567-8901</p>
-        <p><strong>Email:</strong> contacto@gabino.com</p>
-        <p><strong>Instagram:</strong> <a href="#" style="color:#955C89;">@gabino.tienda</a></p>
-      </div>
-    </section>
-  </main>
+                <div class="columna-informacion-contacto flex-item-info">
+                    
+                    <div class="tarjeta-informacion">
+                        <h2 class="titulo-seccion">Información de Contacto</h2>
+                        
+                        <div class="item-info-contacto flex-center-vertical">
+                            <span class="icono-contacto" aria-hidden="true">📍</span>
+                            <div>
+                                <strong>Dirección</strong>
+                                <p>Lima 757 | Ciudad Autonoma de Buenos Aires, Argentina</p>
+                            </div>
+                        </div>
+                        
+                        <div class="item-info-contacto flex-center-vertical">
+                            <span class="icono-contacto" aria-hidden="true">📞</span>
+                            <div>
+                                <strong>Teléfono</strong>
+                                <p>15-7662-5199</p>
+                            </div>
+                        </div>
 
-  <footer>
-    <p>© 2025 Gabino</p>
-  </footer>
+                        <div class="item-info-contacto flex-center-vertical">
+                            <span class="icono-contacto" aria-hidden="true">📧</span>
+                            <div>
+                                <strong>Email</strong>
+                                <p>info@paseouade.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="item-info-contacto flex-center-vertical">
+                            <span class="icono-contacto" aria-hidden="true">⏱️</span>
+                            <div>
+                                <strong>Horario</strong>
+                                <p>Lunes a Domingo | 10:00 - 22:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tarjeta-informacion" style="margin-top: 30px;">
+                        <h2 class="titulo-seccion">Ubicación</h2>
+                        <div class="area-mapa flex-center-contenido" role="img" aria-label="Mapa de ubicación en Avenida Principal 123">
+                            <span class="icono-contacto" aria-hidden="true">📍</span>
+                            <p style="margin-left: 10px;">Lima 757, CABA, Argentina</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="columna-formulario flex-item-formulario">
+                    <div class="tarjeta-formulario">
+                        <h2 class="titulo-seccion">Envianos un mensaje</h2>
+                        
+                        <form id="formulario-contacto" aria-label="Formulario para enviar un mensaje" class="formulario-flex-columna">
+                            
+                            <div class="form-group">
+                                <label for="input-nombre">Nombre completo *</label>
+                                <input type="text" id="input-nombre" name="nombre" required aria-required="true">
+                                <span id="error-nombre" class="mensaje-error" aria-live="polite"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="input-email">Correo electrónico *</label>
+                                <input type="email" id="input-email" name="email" required aria-required="true">
+                                <span id="error-email" class="mensaje-error" aria-live="polite"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="input-asunto">Asunto *</label>
+                                <select id="input-asunto" name="asunto" required aria-required="true">
+                                    <option value="" disabled selected>Selecciona un asunto</option>
+                                    <option value="informacion">Información General</option>
+                                    <option value="horarios">Consultar Horarios</option>
+                                    <option value="reclamos">Reclamos y Sugerencias</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="input-mensaje">Mensaje *</label>
+                                <textarea id="input-mensaje" name="mensaje" required aria-required="true"></textarea>
+                                <span id="error-mensaje" class="mensaje-error" aria-live="polite"></span>
+                            </div>
+                            
+                            <button type="submit" class="btn-llamada-accion">
+                                <span aria-hidden="true">✉️</span> Enviar mensaje
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer-principal" role="contentinfo">
+        <p class="texto-copyright">&copy; 2025 PaseoUADE. Todos los derechos reservados.</p>
+    </footer>
+    <script src="app.js"></script>
 </body>
 </html>

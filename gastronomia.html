@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaseoUADE | Gastronomía</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    
+    <header class="header-principal" role="banner">
+        <div class="logo-area">
+            <img src="images/logo_icon.png" alt="Icono de edificio de PaseoUADE"> 
+            <span class="nombre-marca">PaseoUADE</span>
+        </div>
+        <nav class="navegacion-principal" aria-label="Navegación Principal del Sitio">
+            <a href="inicio.html" class="nav-link">Inicio</a>
+            <a href="servicios.html" class="nav-link">Servicios</a>
+            <a href="entretenimiento.html" class="nav-link">Entretenimiento</a>
+            <a href="locales.html" class="nav-link">Locales</a>
+            <a href="ofertas.html" class="nav-link">Ofertas</a>
+            <a href="gastronomia.html" class="nav-link" aria-current="page">Gastronomía</a>
+            <a href="contacto.html" class="nav-link">Contacto</a>
+            <button id="toggle-modo" class="btn-accesibilidad" aria-label="Cambiar modo de visualización">Modo Oscuro</button>
+        </nav>
+    </header>
+
+    <main class="main-content" id="main-content">
+        
+        <section class="seccion-pagina-secundaria" aria-labelledby="h1-gastronomia">
+            <h1 id="h1-gastronomia" class="titulo-pagina-secundaria">Patio de Comidas y Restaurantes</h1>
+            <p class="subtitulo-pagina-secundaria">Una amplia variedad de opciones para todos los gustos, en un ambiente cómodo y moderno.</p>
+            
+            <div class="gastronomia-wrap-container" role="region" aria-label="Listado de locales de comida del patio de comidas">
+                
+                <article class="tarjeta-local-comida">
+                    <img src="images/local_pastas.jpg" alt="Plato de pasta italiana recién servido con salsa roja." class="local-imagen">
+                    <h2 class="local-titulo">La Mamma Pasta</h2>
+                    <p>🍝 Comida Italiana tradicional, pastas frescas y salsas caseras.</p>
+                    <p class="local-ubicacion">Nivel 2 | Sector Gourmet</p>
+                </article>
+
+                <article class="tarjeta-local-comida">
+                    <img src="images/local_hamburguesa.jpg" alt="Hamburguesa gourmet con queso cheddar y papas fritas." class="local-imagen">
+                    <h2 class="local-titulo">Burger House</h2>
+                    <p>🍔 La mejor hamburguesería con opciones vegetarianas y combos XL.</p>
+                    <p class="local-ubicacion">Nivel 3 | Patio Central</p>
+                </article>
+
+                <article class="tarjeta-local-comida">
+                    <img src="images/local_pizza.jpg" alt="Pizza de pepperoni con masa gruesa y mucho queso fundido." class="local-imagen">
+                    <h2 class="local-titulo">Pizza Planet</h2>
+                    <p>🍕 Variedad de pizzas a la leña, porciones individuales y familiares.</p>
+                    <p class="local-ubicacion">Nivel 3 | Patio Central</p>
+                </article>
+                
+                <article class="tarjeta-local-comida">
+                    <img src="images/local_wok.jpg" alt="Wok de vegetales y pollo con salsa de soja." class="local-imagen">
+                    <h2 class="local-titulo">Wok Express</h2>
+                    <p>🥢 Crea tu propio wok con fideos, arroz, vegetales frescos y proteínas.</p>
+                    <p class="local-ubicacion">Nivel 2 | Sector Rápida</p>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer-principal" role="contentinfo">
+        <p class="texto-copyright">&copy; 2025 PaseoUADE. Todos los derechos reservados.</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

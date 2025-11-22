@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plaza Comercial | Entretenimiento</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <header class="header-principal flex-row-distribuida" role="banner">
+        <div class="logo-area flex-center-vertical">
+            <img src="images/logo_icon.png" alt="Icono de edificio de PaseoUADE"> 
+            <span class="nombre-marca">PaseoUADE</span>
+        </div>
+        <nav class="navegacion-principal flex-row-enlaces" aria-label="Navegación Principal del Sitio">
+            <a href="index.html" class="nav-link">Inicio</a>
+            <a href="servicios.html" class="nav-link">Servicios</a>
+            <a href="entretenimiento.html" class="nav-link" aria-current="page">Entretenimiento</a>
+            <a href="locales.html" class="nav-link">Locales</a>
+            <a href="ofertas.html" class="nav-link">Ofertas</a>
+            <a href="gastronomia.html" class="nav-link">Gastronomía</a>
+            <a href="contacto.html" class="nav-link">Contacto</a>
+            <button id="toggle-modo" class="btn-accesibilidad" aria-label="Cambiar modo de visualización">Modo Oscuro</button>
+        </nav>
+    </header>
+
+    <main class="main-content" id="main-content">
+        
+        <section class="seccion-pagina-secundaria" aria-labelledby="h1-entretenimiento">
+            <h1 id="h1-entretenimiento" class="titulo-pagina-secundaria">Entretenimiento</h1>
+            <p class="subtitulo-pagina-secundaria">Diversión garantizada para toda la familia con opciones de entretenimiento únicas.</p>
+            
+            <div class="contenido-entretenimiento-flex flex-row-imagen-lista">
+                
+                <div class="imagen-arcade-area flex-item-media">
+                    <img src="images/zona_juegos.jpg" alt="Zona de juegos arcade con luces neón y máquinas" class="imagen-entretenimiento">
+                </div>
+
+                <div class="listado-opciones-entretenimiento flex-item-media">
+                    <article class="tarjeta-opcion">
+                        <span class="icono-opcion" aria-hidden="true">🎬</span>
+                        <h2 class="opcion-titulo">Cines</h2>
+                        <p>Últimos estrenos con salas premium.</p>
+                        <small class="detalle-horario">Desde 12:00 hs</small>
+                    </article>
+
+                    <article class="tarjeta-opcion">
+                        <span class="icono-opcion" aria-hidden="true">🎮</span>
+                        <h2 class="opcion-titulo">Zona de juegos</h2>
+                        <p>Arcade y videojuegos para todas las edades.</p>
+                        <small class="detalle-horario">10:00 - 22:00 hs</small>
+                    </article>
+
+                    <article class="tarjeta-opcion">
+                        <span class="icono-opcion" aria-hidden="true">🎵</span>
+                        <h2 class="opcion-titulo">Eventos en vivo</h2>
+                        <p>Música y shows cada fin de semana.</p>
+                        <small class="detalle-horario">Viernes y sábados</small>
+                    </article>
+
+                    <article class="tarjeta-opcion">
+                        <span class="icono-opcion" aria-hidden="true">👨‍👩‍👧‍👦</span>
+                        <h2 class="opcion-titulo">Área familiar</h2>
+                        <p>Actividades y talleres para niños.</p>
+                        <small class="detalle-horario">Sábados y domingos</small>
+                    </article>
+                </div>
+            </div>
+            
+        </section>
+
+    </main>
+
+    <footer class="footer-principal" role="contentinfo">
+        <p class="texto-copyright">&copy; 2025 PaseoUADE. Todos los derechos reservados.</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
