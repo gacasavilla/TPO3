@@ -701,4 +701,8 @@ body.modo-oscuro #chatbotBtn {
 body.modo-oscuro a {
     color: #ffffff !important;
 }
+body.modo-oscuro span {
+    color: #ffffff !important;
+}
+
 
