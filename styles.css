@@ -637,6 +637,68 @@ body.modo-oscuro #chatWindow {
   transform: translateY(0);
 }
 body.modo-oscuro p {
+  color: #d49816 !important;
+}
+body.modo-oscuro h1,
+body.modo-oscuro h2,
+body.modo-oscuro h3,
+body.modo-oscuro h4,
+body.modo-oscuro h5 {
   color: #ffffff !important;
+}
+
+/* CHATBOT — Modo Oscuro */
+body.modo-oscuro .chat-window {
+    background-color: #1f1f1f !important;
+    border-color: #444 !important;
+    color: #ffffff !important;
+}
+
+body.modo-oscuro .chat-header {
+    color: #ffffff !important;
+    border-bottom: 1px solid #555 !important;
+}
+
+body.modo-oscuro .chat-messages {
+    background-color: #2a2a2a !important;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.25) !important;
+}
+
+body.modo-oscuro .message.msg-bot {
+    background-color: #3a3a3a !important;
+    color: #ffffff !important;
+}
+
+body.modo-oscuro .message.msg-user {
+    background-color: #4a6fa5 !important; /* azul suave oscuro */
+    color: #ffffff !important;
+}
+
+body.modo-oscuro .chat-option {
+    background-color: #333 !important;
+    color: #fff !important;
+}
+
+body.modo-oscuro .chat-option:hover {
+    background-color: #444 !important;
+}
+
+body.modo-oscuro #chatInput {
+    background-color: #333 !important;
+    color: #fff !important;
+    border: 1px solid #666 !important;
+}
+
+body.modo-oscuro #sendMsgBtn {
+    background-color: #d48b00 !important;
+    color: #ffffff !important;
+}
+
+body.modo-oscuro #chatbotBtn {
+    background-color: #d48b00 !important;
+    color: #fff !important;
+}
+body.modo-oscuro a {
+    color: #ffffff !important;
 }
 
