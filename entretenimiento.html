@@ -3,17 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/iconoCentro.png">
     <title>Plaza Comercial | Entretenimiento</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="paginas">
     
-    <header class="header-principal flex-row-distribuida" role="banner">
-        <div class="logo-area flex-center-vertical">
-            <img src="images/logo_icon.png" alt="Icono de edificio de PaseoUADE"> 
-            <span class="nombre-marca">PaseoUADE</span>
-        </div>
-        <nav class="navegacion-principal flex-row-enlaces" aria-label="Navegación Principal del Sitio">
+    <header class="header-principal" role="banner">
+        <div class="header-inner">
+            <a href="index.html" class="logo-area">
+                <img src="img/logoCentro.png" alt="Icono de Plaza Comercial">
+                <span class="nombre-marca">Plaza Comercial</span>
+            </a>
+
+            <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú de navegación">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+
+            <nav class="navegacion-principal" aria-label="Navegación principal del sitio">
             <a href="index.html" class="nav-link">Inicio</a>
             <a href="servicios.html" class="nav-link">Servicios</a>
             <a href="entretenimiento.html" class="nav-link" aria-current="page">Entretenimiento</a>
@@ -21,60 +33,154 @@
             <a href="ofertas.html" class="nav-link">Ofertas</a>
             <a href="gastronomia.html" class="nav-link">Gastronomía</a>
             <a href="contacto.html" class="nav-link">Contacto</a>
-            <button id="toggle-modo" class="btn-accesibilidad" aria-label="Cambiar modo de visualización">Modo Oscuro</button>
-        </nav>
+
+
+            <button id="toggle-modo" class="btn-accesibilidad" type="button">
+                Modo oscuro
+            </button>
+            </nav>
+        </div>
     </header>
+    <main class="py-5 seccion-entretenimiento">
 
-    <main class="main-content" id="main-content">
-        
-        <section class="seccion-pagina-secundaria" aria-labelledby="h1-entretenimiento">
-            <h1 id="h1-entretenimiento" class="titulo-pagina-secundaria">Entretenimiento</h1>
-            <p class="subtitulo-pagina-secundaria">Diversión garantizada para toda la familia con opciones de entretenimiento únicas.</p>
-            
-            <div class="contenido-entretenimiento-flex flex-row-imagen-lista">
-                
-                <div class="imagen-arcade-area flex-item-media">
-                    <img src="images/zona_juegos.jpg" alt="Zona de juegos arcade con luces neón y máquinas" class="imagen-entretenimiento">
-                </div>
+        <div class="container">
 
-                <div class="listado-opciones-entretenimiento flex-item-media">
-                    <article class="tarjeta-opcion">
-                        <span class="icono-opcion" aria-hidden="true">🎬</span>
-                        <h2 class="opcion-titulo">Cines</h2>
-                        <p>Últimos estrenos con salas premium.</p>
-                        <small class="detalle-horario">Desde 12:00 hs</small>
-                    </article>
+            <!-- TÍTULO Y SUBTÍTULO -->
+            <header class="mb-5">
+            <h1 class="fw-bold titulo-seccion">Entretenimiento</h1>
+            <p class="texto-intro">
+                Diversión garantizada para toda la familia con opciones de entretenimiento únicas
+            </p>
+            </header>
 
-                    <article class="tarjeta-opcion">
-                        <span class="icono-opcion" aria-hidden="true">🎮</span>
-                        <h2 class="opcion-titulo">Zona de juegos</h2>
-                        <p>Arcade y videojuegos para todas las edades.</p>
-                        <small class="detalle-horario">10:00 - 22:00 hs</small>
-                    </article>
+            <div class="row g-5 align-items-start">
 
-                    <article class="tarjeta-opcion">
-                        <span class="icono-opcion" aria-hidden="true">🎵</span>
-                        <h2 class="opcion-titulo">Eventos en vivo</h2>
-                        <p>Música y shows cada fin de semana.</p>
-                        <small class="detalle-horario">Viernes y sábados</small>
-                    </article>
-
-                    <article class="tarjeta-opcion">
-                        <span class="icono-opcion" aria-hidden="true">👨‍👩‍👧‍👦</span>
-                        <h2 class="opcion-titulo">Área familiar</h2>
-                        <p>Actividades y talleres para niños.</p>
-                        <small class="detalle-horario">Sábados y domingos</small>
-                    </article>
-                </div>
+            <!-- IMAGEN IZQUIERDA -->
+            <div class="col-lg-5">
+                <img 
+                src="img/entretenimiento.avif" 
+                class="img-fluid shadow rounded" 
+                alt="Zona de juegos"
+                >
             </div>
-            
-        </section>
+
+            <!-- CARDS DERECHA -->
+            <div class="col-lg-7">
+
+                <div class="card card-ent h-100 shadow-sm p-4 mb-4">
+                <div class="d-flex">
+                    <div class="icono-ent me-3"><i class="bi bi-film"></i></div>
+                    <div>
+                    <h5 class="fw-bold mb-1">Cines</h5>
+                    <p class="mb-0 text-muted">Última tecnología con salas premium<br>Desde 12:00</p>
+                    </div>
+                </div>
+                </div>
+
+                <div class="card card-ent h-100 shadow-sm p-4 mb-4">
+                <div class="d-flex">
+                    <div class="icono-ent me-3"><i class="bi bi-controller"></i></div>
+                    <div>
+                    <h5 class="fw-bold mb-1">Zona de juegos</h5>
+                    <p class="mb-0 text-muted">Arcade y videojuegos para todas las edades<br>10:00 - 22:00</p>
+                    </div>
+                </div>
+                </div>
+
+                <div class="card card-ent h-100 shadow-sm p-4 mb-4">
+                <div class="d-flex">
+                    <div class="icono-ent me-3"><i class="bi bi-music-note-beamed"></i></div>
+                    <div>
+                    <h5 class="fw-bold mb-1">Eventos en vivo</h5>
+                    <p class="mb-0 text-muted">Música y shows cada fin de semana<br>Viernes y Sábados</p>
+                    </div>
+                </div>
+                </div>
+
+                <div class="card card-ent h-100 shadow-sm p-4">
+                <div class="d-flex">
+                    <div class="icono-ent me-3"><i class="bi bi-people"></i></div>
+                    <div>
+                    <h5 class="fw-bold mb-1">Área familiar</h5>
+                    <p class="mb-0 text-muted">Actividades y talleres para niños<br>Sábados y domingos</p>
+                    </div>
+                </div>
+                </div>
+
+            </div>
+
+            </div>
+
+        </div>
 
     </main>
+<hr>
+    <footer class="footer mt-5 pt-5 pb-3">
+        <div class="container">
 
-    <footer class="footer-principal" role="contentinfo">
-        <p class="texto-copyright">&copy; 2025 PaseoUADE. Todos los derechos reservados.</p>
+            <div class="row">
+
+                <div class="col-lg-4 mb-4">
+                    <div class="d-flex align-items-center mb-3">
+                    <img src="img/logoCentro.png" width="40" class="me-2" alt="Logo">
+                    <h5 class="mb-0 fw-bold">Plaza Comercial</h5>
+                    </div>
+                    <p class="text-muted">
+                    Tu espacio de compras, gastronomía y entretenimiento.  
+                    Más de 150 locales en un solo lugar.
+                    </p>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <h6 class="fw-bold mb-3">Navegación</h6>
+                    <ul class="list-unstyled">
+                    <li><a href="index.html" class="footer-link">Inicio</a></li>
+                    <li><a href="servicios.html" class="footer-link">Servicios</a></li>
+                    <li><a href="entretenimiento.html" class="footer-link">Entretenimiento</a></li>
+                    <li><a href="locales.html" class="footer-link">Locales</a></li>
+                    <li><a href="ofertas.html" class="footer-link">Ofertas</a></li>
+                    <li><a href="gastronomia.html" class="footer-link">Gastronomía</a></li>
+                    <li><a href="contacto.html" class="footer-link">Contacto</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="col-lg-4 mb-4">
+                    <h6 class="fw-bold mb-3">Contacto</h6>
+
+                    <p class="mb-1"><i class="bi bi-geo-alt me-2"></i>Lima 757 | Ciudad Autonoma de Buenos Aires</p>
+                    <p class="mb-1"><i class="bi bi-telephone me-2"></i>15-7662-5199</p>
+                    <p class="mb-1"><i class="bi bi-envelope me-2"></i>info@plazacomercial.com</p>
+                    <p class="mb-0"><i class="bi bi-clock me-2"></i>Lun-Dom 10:00 – 22:00</p>
+                </div>
+
+            </div>
+        <button class="chatbot-btn" id="chatbotBtn">💬</button>
+
+        <div class="chat-window" id="chatWindow">
+            <div class="chat-header">Chat Plaza Comercial</div>
+
+        <div id="chatMessages" class="chat-messages"></div>
+
+        <div class="chat-options">
+            <button class="chat-option" data-opt="info"> Información General</button>
+            <button class="chat-option" data-opt="ofertas"> Ofertas</button>
+            <button class="chat-option" data-opt="asistente">👤 Hablar con un asistente</button>
+        </div>
+
+        <div class="chat-input-container">
+            <input type="text" id="chatInput" placeholder="Escribe un mensaje...">
+            <button id="sendMsgBtn">Enviar</button>
+        </div>            
+
+            <hr>
+
+            <div class="text-center text-muted">
+            © 2025 Plaza Comercial – Todos los derechos reservados
+            </div>
+
+        </div>
     </footer>
-    <script src="app.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

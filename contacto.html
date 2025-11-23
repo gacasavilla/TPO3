@@ -3,131 +3,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PaseoUADE | Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/iconoCentro.png">
+    <title>Plaza Comercial | Contacto</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    
-    <header class="header-principal flex-row-distribuida" role="banner">
-        <div class="logo-area flex-center-vertical">
-            <img src="images/logo_icon.png" alt="Icono de edificio de PaseoUADE"> 
-            <span class="nombre-marca">PaseoUADE</span>
+<body class="paginas">
+    <header class="header-principal" role="banner">
+        <div class="header-inner">
+            <a href="index.html" class="logo-area">
+                <img src="img/logoCentro.png" alt="Icono de Plaza Comercial">
+                <span class="nombre-marca">Plaza Comercial</span>
+            </a>
+
+            <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú de navegación">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="navegacion-principal" aria-label="Navegación principal del sitio">
+                <a href="index.html" class="nav-link">Inicio</a>
+                <a href="servicios.html" class="nav-link">Servicios</a>
+                <a href="entretenimiento.html" class="nav-link">Entretenimiento</a>
+                <a href="locales.html" class="nav-link">Locales</a>
+                <a href="ofertas.html" class="nav-link">Ofertas</a>
+                <a href="gastronomia.html" class="nav-link">Gastronomía</a>
+                <a href="contacto.html" class="nav-link" aria-current="page">Contacto</a>
+
+                <button id="toggle-modo" class="btn-accesibilidad" type="button">
+                    Modo oscuro
+                </button>
+            </nav>
         </div>
-        <nav class="navegacion-principal flex-row-enlaces" aria-label="Navegación Principal del Sitio">
-            <a href="index.html" class="nav-link">Inicio</a>
-            <a href="servicios.html" class="nav-link">Servicios</a>
-            <a href="entretenimiento.html" class="nav-link">Entretenimiento</a>
-            <a href="locales.html" class="nav-link">Locales</a>
-            <a href="ofertas.html" class="nav-link">Ofertas</a>
-            <a href="gastronomia.html" class="nav-link">Gastronomía</a>
-            <a href="contacto.html" class="nav-link" aria-current="page">Contacto</a>
-            <button id="toggle-modo" class="btn-accesibilidad" aria-label="Cambiar modo de visualización">Modo Oscuro</button>
-        </nav>
     </header>
 
-    <main class="main-content" id="main-content">
-        
-        <section class="seccion-contacto" aria-labelledby="h1-contacto">
-            <h1 id="h1-contacto" class="titulo-pagina-secundaria">Contacto</h1>
-            <p class="subtitulo-pagina-secundaria">Estamos aquí para ayudarte. Contáctanos para cualquier consulta o información.</p>
-            
-            <div class="contacto-flex-container flex-columna-responsive">
+    <main class="py-5 seccion-contacto">
+        <div class="container">
+            <header class="text-center mb-5">
+                <h1 class="fw-bold titulo-seccion">Contacto</h1>
+                <p class="texto-intro">
+                    Estamos aquí para ayudarte. Contáctanos para cualquier consulta o información.
+                </p>
+            </header>
 
-                <div class="columna-informacion-contacto flex-item-info">
-                    
-                    <div class="tarjeta-informacion">
-                        <h2 class="titulo-seccion">Información de Contacto</h2>
-                        
-                        <div class="item-info-contacto flex-center-vertical">
-                            <span class="icono-contacto" aria-hidden="true">📍</span>
-                            <div>
-                                <strong>Dirección</strong>
-                                <p>Lima 757 | Ciudad Autonoma de Buenos Aires, Argentina</p>
+            <div class="row g-4 align-items-start">
+                <div class="col-lg-6">
+                    <div class="card card-contacto mb-4 shadow-sm p-4">
+                        <h5 class="fw-bold mb-4">Información de Contacto</h5>
+
+                        <div class="d-flex mb-3">
+                            <div class="icono-contacto me-3">
+                                <i class="bi bi-geo-alt"></i>
                             </div>
-                        </div>
-                        
-                        <div class="item-info-contacto flex-center-vertical">
-                            <span class="icono-contacto" aria-hidden="true">📞</span>
                             <div>
-                                <strong>Teléfono</strong>
-                                <p>15-7662-5199</p>
+                                <h6 class="fw-bold mb-1">Dirección</h6>
+                                <p class="mb-0 text-muted">
+                                    Lima 757 | Ciudad Autonoma de Buenos Aires
+                                </p>
                             </div>
                         </div>
 
-                        <div class="item-info-contacto flex-center-vertical">
-                            <span class="icono-contacto" aria-hidden="true">📧</span>
+                        <div class="d-flex mb-3">
+                            <div class="icono-contacto me-3">
+                                <i class="bi bi-telephone"></i>
+                            </div>
                             <div>
-                                <strong>Email</strong>
-                                <p>info@paseouade.com</p>
+                                <h6 class="fw-bold mb-1">Teléfono</h6>
+                                <p class="mb-0 text-muted">15-7662-5199</p>
                             </div>
                         </div>
-                        
-                        <div class="item-info-contacto flex-center-vertical">
-                            <span class="icono-contacto" aria-hidden="true">⏱️</span>
+
+                        <div class="d-flex mb-3">
+                            <div class="icono-contacto me-3">
+                                <i class="bi bi-envelope"></i>
+                            </div>
                             <div>
-                                <strong>Horario</strong>
-                                <p>Lunes a Domingo | 10:00 - 22:00</p>
+                                <h6 class="fw-bold mb-1">Email</h6>
+                                <p class="mb-0 text-muted">info@plazacomercial.com</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex">
+                            <div class="icono-contacto me-3">
+                                <i class="bi bi-clock"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold mb-1">Horario</h6>
+                                <p class="mb-0 text-muted">
+                                    Lunes a Domingo<br>
+                                    10:00 – 22:00
+                                </p>
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="tarjeta-informacion" style="margin-top: 30px;">
-                        <h2 class="titulo-seccion">Ubicación</h2>
-                        <div class="area-mapa flex-center-contenido" role="img" aria-label="Mapa de ubicación en Avenida Principal 123">
-                            <span class="icono-contacto" aria-hidden="true">📍</span>
-                            <p style="margin-left: 10px;">Lima 757, CABA, Argentina</p>
+
+                    <div class="card card-contacto shadow-sm p-4">
+                        <h5 class="fw-bold mb-3">Ubicación</h5>
+                        <div class="mapa-placeholder d-flex flex-column justify-content-center align-items-center text-muted">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.4806382208453!2d-58.384346523530425!3d-34.61729235821638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccad7e05f999b%3A0xec36a432d62a0dfb!2sLima%20757%2C%20C1073%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1763853838178!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                 </div>
-                
-                <div class="columna-formulario flex-item-formulario">
-                    <div class="tarjeta-formulario">
-                        <h2 class="titulo-seccion">Envianos un mensaje</h2>
-                        
-                        <form id="formulario-contacto" aria-label="Formulario para enviar un mensaje" class="formulario-flex-columna">
-                            
-                            <div class="form-group">
-                                <label for="input-nombre">Nombre completo *</label>
-                                <input type="text" id="input-nombre" name="nombre" required aria-required="true">
-                                <span id="error-nombre" class="mensaje-error" aria-live="polite"></span>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="input-email">Correo electrónico *</label>
-                                <input type="email" id="input-email" name="email" required aria-required="true">
-                                <span id="error-email" class="mensaje-error" aria-live="polite"></span>
+
+                <div class="col-lg-6">
+                    <div class="card card-contacto shadow-sm p-4">
+                        <h5 class="fw-bold mb-4">Envíanos un mensaje</h5>
+
+                        <form id="form-contacto">
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre completo <span class="text-danger">*</span></label>
+                                <input type="text" id="nombre" class="form-control" placeholder="Tu nombre">
                             </div>
 
-                            <div class="form-group">
-                                <label for="input-asunto">Asunto *</label>
-                                <select id="input-asunto" name="asunto" required aria-required="true">
-                                    <option value="" disabled selected>Selecciona un asunto</option>
-                                    <option value="informacion">Información General</option>
-                                    <option value="horarios">Consultar Horarios</option>
-                                    <option value="reclamos">Reclamos y Sugerencias</option>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Correo electrónico <span class="text-danger">*</span></label>
+                                <input type="email" id="email" class="form-control" placeholder="tucorreo@ejemplo.com">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="asunto" class="form-label">Asunto <span class="text-danger">*</span></label>
+                                <select id="asunto" class="form-select">
+                                    <option selected disabled>Selecciona un asunto</option>
+                                    <option>Información general</option>
+                                    <option>Locales comerciales</option>
+                                    <option>Eventos y promociones</option>
+                                    <option>Otros</option>
                                 </select>
                             </div>
-                            
-                            <div class="form-group">
-                                <label for="input-mensaje">Mensaje *</label>
-                                <textarea id="input-mensaje" name="mensaje" required aria-required="true"></textarea>
-                                <span id="error-mensaje" class="mensaje-error" aria-live="polite"></span>
+
+                            <div class="mb-4">
+                                <label for="mensaje" class="form-label">Mensaje <span class="text-danger">*</span></label>
+                                <textarea id="mensaje" rows="4" class="form-control" placeholder="Escribe tu mensaje aquí"></textarea>
                             </div>
-                            
-                            <button type="submit" class="btn-llamada-accion">
-                                <span aria-hidden="true">✉️</span> Enviar mensaje
-                            </button>
+
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-enviar fw-semibold">
+                                    <i class="bi bi-send me-2"></i>Enviar mensaje
+                                </button>
+                            </div>
+
+                            <p id="form-msg" class="mt-3 fw-semibold"></p>
                         </form>
                     </div>
                 </div>
+
             </div>
-        </section>
-
+        </div>
     </main>
+<hr>
+    <footer class="footer mt-5 pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="img/logoCentro.png" width="40" class="me-2" alt="Logo">
+                        <h5 class="mb-0 fw-bold">Plaza Comercial</h5>
+                    </div>
+                    <p class="text-muted">
+                        Tu espacio de compras, gastronomía y entretenimiento.  
+                        Más de 150 locales en un solo lugar.
+                    </p>
+                </div>
 
-    <footer class="footer-principal" role="contentinfo">
-        <p class="texto-copyright">&copy; 2025 PaseoUADE. Todos los derechos reservados.</p>
+                <div class="col-lg-4 mb-4">
+                    <h6 class="fw-bold mb-3">Navegación</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="footer-link">Inicio</a></li>
+                        <li><a href="servicios.html" class="footer-link">Servicios</a></li>
+                        <li><a href="entretenimiento.html" class="footer-link">Entretenimiento</a></li>
+                        <li><a href="locales.html" class="footer-link">Locales</a></li>
+                        <li><a href="ofertas.html" class="footer-link">Ofertas</a></li>
+                        <li><a href="gastronomia.html" class="footer-link">Gastronomía</a></li>
+                        <li><a href="contacto.html" class="footer-link">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <h6 class="fw-bold mb-3">Contacto</h6>
+                    <p class="mb-1"><i class="bi bi-geo-alt me-2"></i>Lima 757 | Ciudad Autonoma de Buenos Aires</p>
+                    <p class="mb-1"><i class="bi bi-telephone me-2"></i>15-7662-5199</p>
+                    <p class="mb-1"><i class="bi bi-envelope me-2"></i>info@plazacomercial.com</p>
+                    <p class="mb-0"><i class="bi bi-clock me-2"></i>Lun-Dom 10:00 – 22:00</p>
+                </div>
+            </div>
+            
+
+            <hr>
+
+            <div class="text-center text-muted">
+            © 2025 Plaza Comercial – Todos los derechos reservados
+            </div>
+        </div>
     </footer>
     <script src="app.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

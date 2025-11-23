@@ -1,138 +1,225 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plaza Comercial | Locales</title>
-
-    <link rel="stylesheet" href="css/locales.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/iconoCentro.png">
     <link rel="stylesheet" href="styles.css">
 
-    <script src="js/locales.js" defer></script>
-
 </head>
-<body>
-    <header class="header-principal flex-row-distribuida" role="banner">
-        <div class="logo-area flex-center-vertical">
-            <img src="images/logo_icon.png" alt="Icono de edificio de PaseoUADE"> 
-            <span class="nombre-marca">PaseoUADE</span>
-        </div>
-        
-        <nav class="navegacion-principal flex-row-enlaces" aria-label="Navegación Principal del Sitio">
-            <a href="index.html" class="nav-link" aria-current="page">Inicio</a>
+<body class="paginas">
+    
+    <header class="header-principal" role="banner">
+        <div class="header-inner">
+            <a href="index.html" class="logo-area">
+                <img src="img/logoCentro.png" alt="Icono de Plaza Comercial">
+                <span class="nombre-marca">Plaza Comercial</span>
+            </a>
+
+            <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú de navegación">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="navegacion-principal" aria-label="Navegación principal del sitio">
+            <a href="index.html" class="nav-link">Inicio</a>
             <a href="servicios.html" class="nav-link">Servicios</a>
             <a href="entretenimiento.html" class="nav-link">Entretenimiento</a>
-            <a href="locales.html" class="nav-link">Locales</a>
+            <a href="locales.html" class="nav-link"  aria-current="page">Locales</a>
             <a href="ofertas.html" class="nav-link">Ofertas</a>
             <a href="gastronomia.html" class="nav-link">Gastronomía</a>
             <a href="contacto.html" class="nav-link">Contacto</a>
-            <button id="toggle-modo" class="btn-accesibilidad" aria-label="Cambiar modo de visualización">Modo Oscuro</button>
-        </nav>
+
+
+            <button id="toggle-modo" class="btn-accesibilidad" type="button">
+                Modo oscuro
+            </button>
+            </nav>
+        </div>
     </header>
 
-    <div class="contenedor color-secundario">
-        <div class="cont-mapa">
-            <h2>Mapa del Shopping</h2>
-            <p>Puede acceder a la página del local al clickearlo en el mapa.</p>
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1284 826">
-                <image width="1284" height="826" xlink:href="/img/mapa-shopping.png"></image> 
-                <a class="mapa-local" xlink:href="https://gacasavilla.github.io/tpocomercial2/" target="_blank">
-                    <rect x="432" y="58" opacity="100" width="105" height="122"></rect>
-                    <text x="445" y="120">GABINO</text>
-                </a>
-                <a class="mapa-local" xlink:href="https://sgaleanocoman.github.io/disenowebuade/" target="_blank">
-                    <rect x="379" y="276" opacity="100" width="111" height="104"></rect>
-                    <text x="385" y="335">
-                        <tspan x="380" dy="0">RELOJERIA</tspan>
-                        <tspan x="395" dy="1em">AYRES</tspan>
-                    </text>
-                </a>
-                <a class="mapa-local" xlink:href="https://ignaciomaclaughlin25-eng.github.io/entrega1-diseno-desarrollo/" target="_blank">
-                    <rect x="693" y="275" opacity="100" width="111" height="105"></rect>
-                    <text x="699" y="335">LA CUEVA</text>
-                </a>
-                <a class="mapa-local" xlink:href="https://elirozado.github.io/Mimishop-local-comercial-2/index.html" target="_blank">
-                    <rect x="608" y="384"opacity="100" width="125" height="104"></rect>
-                    <text x="618" y="440">MIMISHOP</text>
-                </a>
-                <a class="mapa-local" xlink:href="https://fdileva2002.github.io/LocalComercial/" target="_blank">
-                    <rect x="542" y="627" opacity="100" width="210" height="138"></rect>
-                    <text x="580" y="700">TECHHOUSE</text>
-                </a>
-            </svg>
-            <div class="indicadores-mapa">
-                <div class="indicador">
-                    <svg width="24" height="24">
-                        <circle cx="12" cy="12" r="10" fill="#E7964E" stroke="black" stroke-width="1" />
-                    </svg>
-                    <p>Gastronomia</p>
+    <main class="py-5 seccion-locales">
+        <div class="container">
+
+
+            <header class="mb-5 text-center text-lg-start">
+                <h1 class="fw-bold titulo-seccion">Locales</h1>
+                <p class="texto-intro">
+                Explorá el mapa del paseo y encontrá rápidamente tus locales favoritos por rubro.
+                </p>
+            </header>
+
+
+            <div class="row g-4 mb-5">
+                <div class="col-12">
+                <div class="card card-mapa shadow-sm p-4">
+                    <h5 class="fw-bold mb-3">Mapa del shopping</h5>
+                    <div class="mapa-wrapper">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" 
+                        xmlns:xlink="http://www.w3.org/1999/xlink" 
+                        viewBox="0 0 1284 826">
+                        <image width="1284" height="826" xlink:href="img/mapa-shopping.png"></image> 
+
+                        <!-- Gabino -->
+                        <a xlink:href="https://gacasavilla.github.io/tpocomercial2/" target="_blank">
+                            <rect class="mapa-local" x="432" y="58" width="105" height="122"></rect>
+                            <text x="484.5" y="125" text-anchor="middle">GABINO</text>
+                        </a>
+
+                        <!-- Relojería Ayres -->
+                        <a xlink:href="https://sgaleanocoman.github.io/disenowebuade/" target="_blank">
+                            <rect class="mapa-local" x="379" y="276" width="111" height="104"></rect>
+                            <text x="434.5" y="330" text-anchor="middle" style="font-size:14px;">
+                            RELOJERÍA AYRES
+                            </text>
+                        </a>
+
+                        <!-- La Cueva -->
+                        <a xlink:href="https://ignaciomaclaughlin25-eng.github.io/entrega1-diseno-desarrollo/" target="_blank">
+                            <rect class="mapa-local" x="693" y="275" width="111" height="105"></rect>
+                            <text x="748.5" y="330" text-anchor="middle">LA CUEVA</text>
+                        </a>
+
+                        <!-- Mimishop -->
+                        <a xlink:href="https://elirozado.github.io/Mimishop-local-comercial-2/index.html" target="_blank">
+                            <rect class="mapa-local" x="608" y="384" width="125" height="104"></rect>
+                            <text x="670.5" y="440" text-anchor="middle">MIMISHOP</text>
+                        </a>
+
+                        <!-- Techhouse -->
+                        <a xlink:href="https://fdileva2002.github.io/LocalComercial/" target="_blank">
+                            <rect class="mapa-local" x="542" y="627" width="210" height="138"></rect>
+                            <text x="647" y="700" text-anchor="middle">TECHHOUSE</text>
+                        </a>
+                        </svg>
+                    </div>
                 </div>
-                <div class="indicador">
-                    <svg width="24" height="24">
-                        <circle cx="12" cy="12" r="10" fill="#5AA69A" stroke="black" stroke-width="1" />
-                    </svg>
-                    <p>Locales</p>
                 </div>
             </div>
+
+
+            <div class="row g-4">
+                <div class="col-12">
+                    <div class="card card-locales shadow-sm p-4">
+                        <div class="d-flex flex-column flex-md-row align-items-start align-items-md-center gap-3 mb-4">
+                            <div>
+                                <label for="selector-categoria" class="form-label fw-semibold mb-1">Filtrar por categoría</label>
+                                <select name="categoria" id="selector-categoria" class="form-select form-select-sm w-auto">
+                                <option value="">-- Todas las categorías --</option>
+                                </select>
+                            </div>
+                            <button id="boton-limpia-filtros" class="btn btn-outline-secondary btn-sm mt-2 mt-md-4">
+                                Limpiar filtros
+                            </button>
+                        </div>
+
+                        <div class="lista-locales" id="lista-locales">
+                            <div data-categoria="Accesorios" data-nombrelocal="Relojería Ayres" class="local">
+                                <div class="logo-local">
+                                <img src="img/logo-relojeriaayres.png" alt="Relojería Ayres">
+                                </div>
+                                <p class="local-nombre">Relojería Ayres</p>
+                                <a href="https://sgaleanocoman.github.io/disenowebuade/" target="_blank">Ir a página web</a>
+                            </div>
+
+                            <div data-categoria="Indumentaria" data-nombrelocal="Gabino" class="local">
+                                <div class="logo-local">
+                                <img src="img/logo-gabino.jpg" alt="Gabino">
+                                </div>
+                                <p class="local-nombre">Gabino</p>
+                                <a href="https://gacasavilla.github.io/tpocomercial2/" target="_blank">Ir a página web</a>
+                            </div>
+
+                            <div data-categoria="Belleza" data-nombrelocal="La Cueva" class="local">
+                                <div class="logo-local">
+                                <img src="img/logo-lacueva.png" alt="La Cueva">
+                                </div>
+                                <p class="local-nombre">La Cueva</p>
+                                <a href="https://ignaciomaclaughlin25-eng.github.io/entrega1-diseno-desarrollo/" target="_blank">
+                                Ir a página web
+                                </a>
+                            </div>
+
+                            <div data-categoria="Juguetería" data-nombrelocal="Mimishop" class="local">
+                                <div class="logo-local">
+                                <img src="img/logo-mimishop.png" alt="Mimishop">
+                                </div>
+                                <p class="local-nombre">Mimishop</p>
+                                <a href="https://elirozado.github.io/Mimishop-local-comercial-2/index.html" target="_blank">
+                                Ir a página web
+                                </a>
+                            </div>
+
+                            <div data-categoria="Tecnología" data-nombrelocal="Techhouse" class="local">
+                                <div class="logo-local">
+                                <img src="img/logo-techhouse.png" alt="Techhouse">
+                                </div>
+                                <p class="local-nombre">Techhouse</p>
+                                <a href="https://fdileva2002.github.io/LocalComercial/" target="_blank">Ir a página web</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
-    </div>
+  </main>
+<hr>
+    <footer class="footer mt-5 pt-5 pb-3">
+        <div class="container">
 
-    <div class="contenedor">
-        <h2>Locales</h2>
-        <div class="filtro">
-            <label for="selector-categoria">Categoría:</label>
-            <select name="categoria" id="selector-categoria">
-                <option value="">-- Seleccione una categoria --</option>
-            </select>
-            <button for="selector-categoria" id="boton-limpia-filtros"> Limpiar filtros</button>
-        </div>
-        <div class="lista-locales" id="lista-locales">
-            <div data-categoria="Indumentaria" data-nombrelocal="Gabino" class="local">
-                <div class="logo-local">
-                    <img src="img/locales-logos/logo-gabino.jpg">
+            <div class="row">
+
+                <div class="col-lg-4 mb-4">
+                    <div class="d-flex align-items-center mb-3">
+                    <img src="img/logoCentro.png" width="40" class="me-2" alt="Logo">
+                    <h5 class="mb-0 fw-bold">Plaza Comercial</h5>
+                    </div>
+                    <p class="text-muted">
+                    Tu espacio de compras, gastronomía y entretenimiento.  
+                    Más de 150 locales en un solo lugar.
+                    </p>
                 </div>
-                <p class="local-nombre">Gabino</p>
-                <a href="https://gacasavilla.github.io/tpocomercial2/" target="_blank">Ir a página web</a>
+
+                <div class="col-lg-4 mb-4">
+                    <h6 class="fw-bold mb-3">Navegación</h6>
+                    <ul class="list-unstyled">
+                    <li><a href="index.html" class="footer-link">Inicio</a></li>
+                    <li><a href="servicios.html" class="footer-link">Servicios</a></li>
+                    <li><a href="entretenimiento.html" class="footer-link">Entretenimiento</a></li>
+                    <li><a href="locales.html" class="footer-link">Locales</a></li>
+                    <li><a href="ofertas.html" class="footer-link">Ofertas</a></li>
+                    <li><a href="gastronomia.html" class="footer-link">Gastronomía</a></li>
+                    <li><a href="contacto.html" class="footer-link">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <h6 class="fw-bold mb-3">Contacto</h6>
+
+                    <p class="mb-1"><i class="bi bi-geo-alt me-2"></i>Lima 757 | Ciudad Autonoma de Buenos Aires</p>
+                    <p class="mb-1"><i class="bi bi-telephone me-2"></i>15-7662-5199</p>
+                    <p class="mb-1"><i class="bi bi-envelope me-2"></i>info@plazacomercial.com</p>
+                    <p class="mb-0"><i class="bi bi-clock me-2"></i>Lun-Dom 10:00 – 22:00</p>
+                </div>
+
             </div>
 
-            <div data-categoria="Belleza" data-nombrelocal="La Cueva" class="local">
-                <div class="logo-local">
-                    <img src="img/locales-logos/logo-lacueva.png">
-                </div>
-                <p class="local-nombre">La Cueva</p>
-                <a href="https://ignaciomaclaughlin25-eng.github.io/entrega1-diseno-desarrollo/" target="_blank">Ir a página web</a>
-            </div>
+            <hr>
 
-            <div data-categoria="Juguetería" data-nombrelocal="Mimishop" class="local">
-                <div class="logo-local">
-                    <img src="img/locales-logos/logo-mimishop.png">
-                </div>
-                <p class="local-nombre">MimiShop</p>
-                <a href="https://elirozado.github.io/Mimishop-local-comercial-2/index.html" target="_blank">Ir a página web</a>
-            </div>
-
-            <div data-categoria="Accesorios" data-nombrelocal="Relojería Ayres" class="local">
-                <div class="logo-local">
-                    <img src="img/locales-logos/logo-relojeriaayres.png">
-                </div>
-                <p class="local-nombre">Relojería Ayres</p>
-                <a href="https://sgaleanocoman.github.io/disenowebuade/" target="_blank">Ir a página web</a>
-            </div>
-
-            <div data-categoria="Tecnología" data-nombrelocal="Techhouse" class="local">
-                <div class="logo-local">
-                    <img src="img/locales-logos/logo-techhouse.png">
-                </div>
-                <p class="local-nombre">Techhouse</p>
-                <a href="https://fdileva2002.github.io/LocalComercial/" target="_blank">Ir a página web</a>
+            <div class="text-center text-muted">
+            © 2025 Plaza Comercial – Todos los derechos reservados
             </div>
 
         </div>
-    </div>
-    
-    
-    <footer class="footer-principal" role="contentinfo">
-        <p class="texto-copyright">&copy; 2025 PaseoUADE. Todos los derechos reservados.</p>
     </footer>
+    <script src="script.js"></script>
+    <script src="locales.js"></script>
+    
 </body>
+
 </html>

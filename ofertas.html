@@ -2,37 +2,34 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <title>Plaza Comercial | Promociones</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="img/iconoCentro.png">
-    <title>Plaza Comercial | Inicio</title>
-    <link rel="stylesheet" href="styles.css"> 
 </head>
-<body class="inicio">
+<body class="paginas">
     
-    <header class="header-principal" role="banner">
+   <header class="header-principal" role="banner">
         <div class="header-inner">
-            <!-- LOGO + NOMBRE -->
             <a href="index.html" class="logo-area">
                 <img src="img/logoCentro.png" alt="Icono de Plaza Comercial">
                 <span class="nombre-marca">Plaza Comercial</span>
             </a>
 
-            <!-- BOTÓN HAMBURGUESA (MÓVIL) -->
             <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú de navegación">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
 
-            <!-- NAVEGACIÓN PRINCIPAL -->
             <nav class="navegacion-principal" aria-label="Navegación principal del sitio">
-            <a href="index.html" class="nav-link" aria-current="page">Inicio</a>
+            <a href="index.html" class="nav-link">Inicio</a>
             <a href="servicios.html" class="nav-link">Servicios</a>
             <a href="entretenimiento.html" class="nav-link">Entretenimiento</a>
             <a href="locales.html" class="nav-link">Locales</a>
-            <a href="ofertas.html" class="nav-link">Ofertas</a>
+            <a href="ofertas.html" class="nav-link" aria-current="page">Ofertas</a>
             <a href="gastronomia.html" class="nav-link">Gastronomía</a>
             <a href="contacto.html" class="nav-link">Contacto</a>
 
@@ -44,67 +41,97 @@
         </div>
     </header>
 
+   <main class="py-5 seccion-ofertas">
+        <div class="container">
 
-    <main class="main-content" id="main-content">
-        
-        <section class="seccion-portada flex-columna-responsive" role="region" aria-label="Mensaje de Bienvenida e Información Destacada">
-            
-            <div class="container py-5">
-                <div class="row align-items-center justify-content-between">
+    
+            <header class="text-center mb-5">
+            <h1 class="fw-bold titulo-seccion">Ofertas y Promociones</h1>
+            <p class="texto-intro">
+                Aprovechá nuestros beneficios exclusivos según el medio de pago que elijas.
+            </p>
+            </header>
 
-                    <div class="col-lg-6 mb-4 mb-lg-0">
-                    <h1 class="fw-bold display-5 text-white">Tu destino de compras<br>y entretenimiento</h1>
 
-                    <p class="mt-3 text-white-50">
-                        Descubre más de 150 locales comerciales, opciones gastronómicas 
-                        excepcionales y entretenimiento para toda la familia en un solo lugar.
+            <div class="row g-4" role="region" aria-label="Listado de ofertas vigentes">
+
+                <div class="col-md-6 col-lg-3">
+                    <article class="card card-servicio card-oferta h-100 shadow-sm p-4">
+                    <div class="d-flex align-items-start mb-2">
+                        <div class="icono-oferta me-3">
+                        <i class="bi bi-credit-card"></i>
+                        </div>
+                        <div>
+                        <h2 class="h5 fw-bold mb-1">10% OFF</h2>
+                        <p class="badge-medio-pago mb-1">Débito / Transferencia</p>
+                        </div>
+                    </div>
+                    <p class="text-muted mb-0">
+                        Descuento automático pagando con tarjeta de débito o transferencia bancaria.
                     </p>
-
-                    <div class="row mt-4 g-3">
-                        <div class="col-md-6">
-                        <div class="p-3 rounded shadow-sm bg-dark bg-opacity-25">
-                            <div class="d-flex align-items-center">
-                            <i class="bi bi-geo-alt text-warning me-2 fs-4"></i>
-                            <div>
-                                <h6 class="text-white mb-1">Ubicación central</h6>
-                                <small class="text-white-50">Fácil acceso y estacionamiento</small>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
-
-                        <div class="col-md-6">
-                        <div class="p-3 rounded shadow-sm bg-dark bg-opacity-25">
-                            <div class="d-flex align-items-center">
-                            <i class="bi bi-clock text-warning me-2 fs-4"></i>
-                            <div>
-                                <h6 class="text-white mb-1">Horario extendido</h6>
-                                <small class="text-white-50">Lun-Dom 10:00 – 22:00</small>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-
-                    <a class="btn btn-warning mt-4 px-4 py-2 rounded-pill fw-semibold">
-                        Visítanos hoy →
-                    </a>
-                    </div>
-
-                    <div class="col-lg-5">
-                        <div class="hero-img">
-                            <img 
-                            src="img/vista-al-interior-hotel_1417-1566.avif"
-                            class="img-fluid"
-                            alt="Vista interior del centro comercial"
-                            >
-                        </div>
-                    </div>
+                    </article>
                 </div>
-            </div>
-        </section>
 
+
+                <div class="col-md-6 col-lg-3">
+                    <article class="card card-servicio card-oferta h-100 shadow-sm p-4">
+                    <div class="d-flex align-items-start mb-2">
+                        <div class="icono-oferta me-3">
+                        <i class="bi bi-cash-coin"></i>
+                        </div>
+                        <div>
+                        <h2 class="h5 fw-bold mb-1">15% OFF</h2>
+                        <p class="badge-medio-pago mb-1">Pago en efectivo</p>
+                        </div>
+                    </div>
+                    <p class="text-muted mb-0">
+                        Obtenés un 15% de descuento abonando en efectivo en caja.
+                    </p>
+                    </article>
+                </div>
+
+
+                <div class="col-md-6 col-lg-3">
+                    <article class="card card-servicio card-oferta h-100 shadow-sm p-4">
+                    <div class="d-flex align-items-start mb-2">
+                        <div class="icono-oferta me-3">
+                        <i class="bi bi-card-checklist"></i>
+                        </div>
+                        <div>
+                        <h2 class="h5 fw-bold mb-1">3 y 6 cuotas</h2>
+                        <p class="badge-medio-pago mb-1">Tarejta de Credito</p>
+                        </div>
+                    </div>
+                    <p class="text-muted mb-0">
+                        Pagando con tarjeta de crédito, hasta 3 o 6 cuotas sin interés los martes y jueves.
+                    </p>
+                    </article>
+                </div>
+
+                <!-- 15% reintegro Mercado Pago -->
+                <div class="col-md-6 col-lg-3">
+                    <article class="card card-servicio card-oferta h-100 shadow-sm p-4">
+                    <div class="d-flex align-items-start mb-2">
+                        <div class="icono-oferta me-3">
+                        <i class="bi bi-phone"></i>
+                        </div>
+                        <div>
+                        <h2 class="h5 fw-bold mb-1">15% reintegro</h2>
+                        <p class="badge-medio-pago mb-1">Mercado Pago</p>
+                        </div>
+                    </div>
+                    <p class="text-muted mb-0">
+                        15% de reintegro en tu cuenta abonando con Mercado Pago en locales adheridos.
+                    </p>
+                    </article>
+                </div>
+
+            </div>
+
+        </div>
     </main>
+
+    <hr>
 
     <footer class="footer mt-5 pt-5 pb-3">
         <div class="container">
@@ -135,6 +162,7 @@
                     </ul>
                 </div>
 
+
                 <div class="col-lg-4 mb-4">
                     <h6 class="fw-bold mb-3">Contacto</h6>
 
@@ -145,9 +173,6 @@
                 </div>
 
             </div>
-
-            <hr>
-            
         <button class="chatbot-btn" id="chatbotBtn">💬</button>
 
         <div class="chat-window" id="chatWindow">
@@ -165,12 +190,15 @@
             <input type="text" id="chatInput" placeholder="Escribe un mensaje...">
             <button id="sendMsgBtn">Enviar</button>
         </div>
-</div>
 
+            <hr>
 
+            <div class="text-center text-muted">
+            © 2025 Plaza Comercial – Todos los derechos reservados
+            </div>
+
+        </div>
     </footer>
     <script src="script.js"></script>
-
-
 </body>
 </html>
