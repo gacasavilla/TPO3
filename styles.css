@@ -345,11 +345,16 @@ h1, h2, h3, h4, h5 {
   opacity: 0.6;
   transition: fill 0.25s, opacity 0.25s;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .mapa-local:hover {
   fill: #2E8E7F;
   opacity: 0.9;
+}
+
+.mapa-local text{
+  fill: black;
 }
 
 .card-locales {
@@ -398,6 +403,16 @@ h1, h2, h3, h4, h5 {
 
 .local a {
   font-size: 0.9rem;
+  background-color: #E67E22;
+  padding: 0.4rem 0.9rem;
+  text-decoration: none;
+  color: white;
+  border-radius: 20px;
+  transition-duration: 0.25s;
+}
+
+.local a:hover{
+    background-color: #d97706;
 }
 
 
@@ -703,6 +718,15 @@ body.modo-oscuro a {
 }
 body.modo-oscuro span {
     color: #ffffff !important;
+}
+
+body.modo-oscuro .local{
+  box-shadow: 0 2px 10px rgb(0, 0, 0, 0.4);
+  background-color: 363636;
+}
+
+body.modo-oscuro .local a{
+  color:white;
 }
 
 
