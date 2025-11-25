@@ -26,9 +26,7 @@
 }
 
 .logo-area img {
-  width: 32px;
   height: 32px;
-  border-radius: 10px;
 }
 
 .nombre-marca {
@@ -126,7 +124,7 @@ body.paginas {
 
 .hero-img iframe{
     width: 100%;
-    height: 300px;
+    height: 350px;
 }
 
 h1, h2, h3, h4, h5 {
