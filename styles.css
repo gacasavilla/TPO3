@@ -124,6 +124,11 @@ body.paginas {
   overflow: hidden;
 }
 
+.hero-img iframe{
+    width: 100%;
+    height: 300px;
+}
+
 h1, h2, h3, h4, h5 {
   color: #083c4a;
 }
